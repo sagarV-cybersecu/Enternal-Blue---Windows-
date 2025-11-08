@@ -4,51 +4,6 @@ _A guided walkthrough to the "Blue" room on Try Hack Me_
 TryHackMe Room: https://tryhackme.com/room/blue
 
 
-# Background on Eternal Blue
-**EternalBlue Exploit**
-
-* **Creator:** United States National Security Agency (NSA)
-* **Creation Date:** Leaked in April 2017
-* **Release:** Shadow Brokers
-* **Targeted Vulnerability:** MS17-010
-* **Affected Systems:** Windows XP, Windows 7, Windows Server 2008
-* **Exploit Impact:** Enables unauthorized remote code execution via the Server Message Block (SMB) protocol
-* **Consequences:** Potential unauthorized access, data theft, or installation of malicious software
-* **Global Impact:** Demonstrated during the WannaCry ransomware attack in May 2017, affecting critical systems in healthcare, finance, and government sectors.
-
-_**What is SMB?**_
-
-**Server Message Block (SMB) Protocol**
-
-* **Definition:** Server Message Block (SMB) is a network file-sharing protocol that allows applications and users to access and communicate with files, printers, and other shared resources on a network. It operates as a client-server protocol, where a client requests services and resources from a server.
-
-* **Versions:**
-  - **SMB1:** The original version, widely used in older Windows systems. However, it has security vulnerabilities and is no longer recommended for use.
-  - **SMB2 and SMB2.1:** Introduced in Windows Vista and Windows Server 2008. Designed to improve performance and address security concerns.
-  - **SMB3:** The latest version, introduced in Windows 8 and Windows Server 2012. Offers enhanced security features, improved performance, and support for new functionalities.
-
-* **Key Features:**
-  - **File and Printer Sharing:** SMB facilitates the sharing of files and printers across a network, enabling seamless collaboration and resource access.
-  - **Authentication and Authorization:** Provides mechanisms for authenticating users and authorizing access to shared resources based on user permissions.
-  - **Named Pipes and RPC:** Supports interprocess communication (IPC) through named pipes and Remote Procedure Call (RPC), allowing processes on different systems to communicate.
-
-* **Security Considerations:**
-  - **Vulnerabilities:** Older versions of SMB, particularly SMB1, are susceptible to security vulnerabilities. It is recommended to use the latest versions to benefit from enhanced security features.
-  - **Encryption:** SMB3 supports end-to-end encryption, ensuring data confidentiality during transmission.
-
-* **Common Use Cases:**
-  - **File Sharing:** Primary use is sharing files and folders between computers in a networked environment.
-  - **Print Services:** Facilitates print services by allowing users to send print jobs to shared printers.
-  - **Remote Access:** Enables remote access to files and resources on a server from client machines.
-
-* **EternalBlue Exploit:**
-  - The notorious EternalBlue exploit targeted a vulnerability in the SMB protocol, specifically in the way Windows systems handled SMB traffic. The exploit leveraged this weakness to propagate malware and execute arbitrary code on vulnerable systems.
-
-* **Ongoing Developments:**
-  - Continuous development and improvement of the SMB protocol by Microsoft to enhance performance, security, and compatibility with modern networking environments.
-
-
-
 # Walkthrough 
 
 # **Task 1:** 
